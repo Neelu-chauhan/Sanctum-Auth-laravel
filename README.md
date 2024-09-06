@@ -14,7 +14,8 @@
   <img src="output-img/login.png" width="350" title="hover text">
 </p>
 ## STEPS FOR USE SANCTUM
-LARAVEL SANCTUM TOKEN
+<pre>
+    LARAVEL SANCTUM TOKEN
 Step 1: php artisan install:api
 Step 2: composer require laravel/sanctum
 Step 3: php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
@@ -62,7 +63,9 @@ Step 6 : Bootstrap>app.php for exception
     })->create();
 It will Handle the exception if you use wrong auth token it show error .
 Step 7. NOW you can create controller and use registration and login
-Route::POST('register',[AutController::class,'register']);
+</pre>
+<pre>
+    Route::POST('register',[AutController::class,'register']);
 REGISTER()
  public function register(Request $request){
         $validator = Validator::make($request->all(),[
@@ -81,9 +84,11 @@ REGISTER()
             $user->password =Hash::make($request->password);
             $user->save();
             return $this->SendResponse('User Created Successfully.',$user);}}
+</pre>
 LOGIN()
-Route::POST('login',[AuthController::class,'login'])->name('login');
- public function login(Request $request){
+<p>Route::POST('login',[AuthController::class,'login'])->name('login');</p>
+<pre>
+     public function login(Request $request){
         $validator = Validator::make(request()->all(), [
             'email' => 'required' ,
             'password' => 'required',
@@ -106,6 +111,7 @@ Route::POST('login',[AuthController::class,'login'])->name('login');
             return response()->json(['message' => 'User logged in successfully',$success]);
         }
     }
+</pre>
 
 ## About Laravel
 
