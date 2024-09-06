@@ -7,11 +7,11 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## Screenshots
+## Screenshots 
 
 <p align="center">
   <img src="output-img/register.png" width="350" title="hover text">
-  <img src="output-img/logn.png" width="350" title="hover text">
+  <img src="output-img/login.png" width="350" title="hover text">
 </p>
 
 ## About Laravel
